@@ -1,13 +1,13 @@
-[build]
-  # functions = "netlify/functions"
-  command = "npm run build"  # The build command to build your Next.js app
-  publish = "out"  # Output directory for static files# Path to your Netlify functions directory
+# [build]
+#   # functions = "netlify/functions"
+#   command = "npm run build"  # The build command to build your Next.js app
+#   publish = "out"  # Output directory for static files# Path to your Netlify functions directory
 
 [functions]
   timeout = 26  # Maximum timeout limit for Netlify functions (26 seconds)
 
-[[redirects]]
-  from = "/_next/*"
-  to = "/.netlify/functions/nextjs/*"
-  status = 200
-  force = true
+# [[redirects]]
+#   from = "/_next/*"
+#   to = "/.netlify/functions/nextjs/*"
+#   status = 200
+#   force = true
